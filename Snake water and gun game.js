@@ -22,22 +22,22 @@ let tie = 0;
 let ask = true;
 while(ask){
     let inputed = prompt("Enter your choice among Snake, Water and Gun ")
-    if(com === Snake && inputed === Water){
+    if(com === "Snake" && inputed === "Water"){
         com_win_count++;
       }
-    else if(com === Snake && inputed === gun){
+    else if(com === "Snake" && inputed === "Gun"){
         player_win_count++;
       }
-    else if(com === Water && inputed === Snake){
+    else if(com === "Water" && inputed === "Snake"){
         player_win_count++;
       }
-    else if(com === Water && inputed === Gun){
+    else if(com === "Water" && inputed === "Gun"){
         com_win_count++;
       }
-    else if(com === Gun && inputed === Snake){
+    else if(com === "Gun" && inputed === "Snake"){
         com_win_count++;
       }
-    else if(com === Gun && inputed === Water){
+    else if(com === "Gun" && inputed === "Water"){
         player_win_count++;
       }
     else{
