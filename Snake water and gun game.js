@@ -1,6 +1,12 @@
 let max = 4
 let min = 1
-let random_number = Math.floor(Math.random() * (max - min) + min)
+let com_win_count = 0;
+let player_win_count = 0;
+let tie = 0;
+let ask = true;
+while(ask){
+    let inputed = prompt("Enter your choice among Snake, Water and Gun ")
+    let random_number = Math.floor(Math.random() * (max - min) + min)
 random_number = Number.parseInt(random_number)
 console.log(random_number)
 let com = ""
@@ -14,14 +20,7 @@ switch(random_number){
     case 3:
         com = "Gun"
         break;
-}
-console.log(com)
-let com_win_count = 0;
-let player_win_count = 0;
-let tie = 0;
-let ask = true;
-while(ask){
-    let inputed = prompt("Enter your choice among Snake, Water and Gun ")
+    }
     if(com === "Snake" && inputed === "Water"){
         com_win_count++;
       }
