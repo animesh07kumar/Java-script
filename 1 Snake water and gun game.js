@@ -42,6 +42,7 @@ switch(random_number){
     else{
         tie++;
       }
+    alert(`Computer Choice is ${com}`)
     ask = confirm(`Current Soure Computer Wins ${com_win_count}, Player Wins ${player_win_count} and tie Count ${tie}. do you Want to play again`)
   }
   if(com_win_count > player_win_count){
